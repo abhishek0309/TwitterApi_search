@@ -26,7 +26,7 @@ public class GreetingController {
         // Run this on Windows, cmd, /c = terminate after this run
         ProcessBuilder processBuilder = new ProcessBuilder();
 
-        StringBuffer sb=new StringBuffer("curl -X GET -H \"Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAAHGIAEAAAAA0Fh2YyDpV1N336rFJaFFW8FOzfA%3DoRjcBWlUguDD6pdPOtRl39v4ELBSOJ6EesR8FeyHrAIrE06wwV\" ");
+        StringBuffer sb=new StringBuffer("curl -X GET -H \"Authorization: Bearer BEARERTOKEN\" ");
         if (greeting.getKeywords()==null) {
             sb.append("https://api.twitter.com/1.1/search/tweets.json?q=from%3A");
             sb.append(greeting.getFollowers());
