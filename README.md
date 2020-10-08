@@ -1,8 +1,8 @@
 # TwitterApi_search
-  This is a spring boot application for retrieving tweets based on two parameters(By account name and keywords).
-  Download this project and open it using IDE.
-  There is a GreetingController class in the project(/demo2/SRC/main/java/com/example)
-  In the GreetingSubmit method, replace the text 'BEARERTOKEN' with that of bearer token obtained from twitter developer account.
+ #This is a spring boot application for retrieving tweets based on two parameters(By account name and keywords).
+ #Download this project and open it using IDE.
+  #There is a GreetingController class in the project(/demo2/SRC/main/java/com/example)
+  #In the GreetingSubmit method, replace the text 'BEARERTOKEN' with that of bearer token obtained from twitter developer account.
   On how to obtain a bearer token visit: https://developer.twitter.com/en
   After entering the bearertoken, run the Demo2Application.java file
   Open your browser and go to localhost:8080/greeting to access the application.(Note:Some IDE's may host at a different address. In that case, go to the address at which your IDE hosted)
