@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Twitter Search engine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+            color:blue;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            float: right;
+        }
+
+
+
+        body{
+            background-color:darkslateblue;
+        }
+        h1{
+            background-color: lightblue;
+            font-family: "Segoe UI";
+            alignment: left;
+            font-size: 25px;
+            color: darkblue;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        div{
+            background-color:powderblue;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+        span1{
+            font-family: Cambria;
+            font-style:oblique;
+            font-size: 17px;
+        }
+        span2{
+            font-style: italic;
+            font-family: Cambria;
+            font-size: 14px;
+            opacity: 60%;
+        }
+
+
+        span3{
+          display:block;
+            font-family: Calibri;
+            font-size: 18px;
+      }
+        p2{
+            font-size: 15px;
+            font-family: Arial;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<h1>Your search result<a href="#" class="fa fa-twitter"></a></h1>
+<div>
+<script th:inline="javascript">
+    var tweet = [[${greeting.twitter}]];
+    var obj=JSON.parse(tweet);
+    var i;
+    for (i=0;i<obj.statuses.length;i++){
+        document.write("<p1>"+"<span1>"+obj.statuses[i].user.name +"    "+"</span1>"+"<span2>"+"@"+obj.statuses[i].user.screen_name+"</span2>"+"<span3>"+obj.statuses[i].text+"</span3>"+"</p1>");
+        document.write("<hr>");
+    }
+
+
+
+</script>
+    <p2><a href=/greeting>Search for more tweets</a></p2>
+    </div>
+
+</body>
+</html>
