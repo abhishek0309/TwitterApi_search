@@ -2,7 +2,7 @@
 ## This is a spring boot application for retrieving tweets based on two parameters(By account name and keywords).
 Download this project and open it using IDE.<br>
  There is a GreetingController class in the project(/demo2/SRC/main/java/com/example)<br>
-  #In the GreetingSubmit method, replace the text 'BEARERTOKEN' with that of bearer token obtained from twitter developer account.<br>
+  In the GreetingSubmit method, replace the text 'BEARERTOKEN' with that of bearer token obtained from twitter developer account.<br>
   On how to obtain a bearer token visit: https://developer.twitter.com/en<br>
   After entering the bearertoken, run the Demo2Application.java file.<br>
   Open your browser and go to localhost:8080/greeting to access the application.(Note:Some IDE's may host at a different address. In that case, go to the address at which your IDE hosted)<br>
